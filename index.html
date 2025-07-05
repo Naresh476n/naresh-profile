@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>NARESH Website</title>
+  
+  
+  
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="red">
+  <meta name="description" content="Student feedback form with video resources. Help improve learning with your input. Includes embedded videos on nature, tech, and music.">
+  <meta name="keywords" content="student feedback form, HTML form, CSS form, Naresh form, learning survey, video compilation, YouTube videos, feedback survey">
+  <meta name="author" content="Naresh Kumar">
+  <meta property="og:title" content="Delicious Homemade Recipes – Naresh's Food Blog">
+  <meta property="og:description" content="Your favorite place to learn how to cook tasty Indian meals. Easy and healthy recipes!">
+  <meta property="og:image" content="https://programs-seven.vercel.app/ben.jpeg">
+  <meta property="og:url" content="https://programs-seven.vercel.app/">
+  <meta property="og:type" content="website">
+
+  <link rel="shortcut icon" href="ben10.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  
+</head>
+<body>
+  <h1 id="title">Student Feedback Survey</h1>
+  <p id="description">Please fill out this short survey to help us improve your learning experience.</p>
+
+  <form id="survey-form">
+    <label id="name-label" for="name">Name:</label><br />
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required /><br /><br />
+
+    <label id="email-label" for="email">Email:</label><br />
+    <input type="email" id="email" name="email" placeholder="Enter a valid email" required /><br /><br />
+
+    <label id="number-label" for="number">Age:</label><br />
+    <input type="number" id="number" name="age" min="10" max="100" placeholder="Enter your age" /><br /><br />
+
+    <label for="dropdown">Which subject do you like most?</label><br />
+    <select id="dropdown" name="subject">
+      <option value="math">Mathematics</option>
+      <option value="science">Science</option>
+    </select><br /><br />
+
+    <p>How do you rate our teaching?</p>
+    <input type="radio" id="excellent" name="rating" value="excellent" />
+    <label for="excellent">Excellent</label><br />
+    <input type="radio" id="good" name="rating" value="good" />
+    <label for="good">Good</label><br /><br />
+
+    
+    <p>What features do you find useful? (Select all that apply)</p>
+    <input type="checkbox" id="videos" name="features" value="videos" />
+    <label for="videos">Video Lectures</label><br />
+    <input type="checkbox" id="quizzes" name="features" value="quizzes" />
+    <label for="quizzes">Quizzes</label><br /><br />
+
+    <label for="comments">Additional Comments:</label><br />
+    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Write your feedback here..."></textarea><br /><br />
+
+    <button type="submit" id="submit">Submit</button>
+  </form>
+
+  <main>
+    <h1>Video Compilation</h1>
+    <p>This page features a collection of videos on various topics.</p>
+
+    <section>
+      <h2>Section 1: Nature</h2>
+      <p>Explore stunning nature documentaries.</p>
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/-B7cXt6W8Yg?si=fPD5W1XFzDcnsC4Q"
+        title="Nature Documentary"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <section>
+      <h2>Section 2: Technology</h2>
+      <p>Discover the latest tech advancements.</p>
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/3-CjKAMdFtY?si=KVPbjUSaoYBtjJX-"
+        title="Tech Video"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+    <section>
+      <h2>Section 3: Music</h2>
+      <p>Enjoy a curated playlist of music videos.</p>
+      <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/-J5mM_WvOeg?si=lroMC9TNcw1b2tua"
+        title="Music Video"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+    </section>
+
+  </main>
+  <footer><a href="tel:+917708347114">770834114</a><br>
+    <a href="mailto:nanaresh476@gmail.com">nanaresh476@gmail.com</a></footer>
+    
+</body>
+</html>
